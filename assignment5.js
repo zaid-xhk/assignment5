@@ -37,7 +37,7 @@ console.log(radiusSum);
 console.log("result of area", calculateTheAreaCircle(radiusSum));
 //   - Develop a program that reads a list of grades and uses the splice method to remove failing grades (below 50) from the array.
 var grades = [50, 45, 90, 59, 33, 41, 59];
-for (let iIndex = 0; iIndex <= grades.length; iIndex++) {
+for (let iIndex = grades.length; iIndex >= 0; iIndex--) {
     if (grades[iIndex] < 50) {
         grades.splice(iIndex, 1);
     }

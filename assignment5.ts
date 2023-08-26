@@ -44,11 +44,11 @@ function calculateTheAreaCircle(radius:number) {
  
 //   - Develop a program that reads a list of grades and uses the splice method to remove failing grades (below 50) from the array.
 var grades:number []= [50,45,90,59,33,41,59];
-for (let iIndex = 0 ; iIndex<=grades.length ; iIndex++ ){
+for (let iIndex = grades.length ; iIndex>=0  ; iIndex-- ){
       if(grades[iIndex]<50) { grades.splice(iIndex,1)
       }
-    }
-    console.log("passing grades",grades);
+}
+console.log("passing grades",grades);
     
 // - Write a program that uses a function to find the largest element in an array of numbers.
 var aarray:number []=[12,27,25,19];
